@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Carousel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">iMovies</a>
+      <ul class="nav">
+        <li>
+          <a href="#"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li><a href="#">Adults</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Trend</a></li>
+        <li><a href="#">My List</a></li>
+      </ul>
+      <div class="search">
+        <input type="text" placeholder="Search" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </header>
+    <div class="banner">
+      <div id="the-little-mermaid" class="content active">
+        <img src="Images/the-little-mermaid-title.png" class="movie-title" />
+        <h4>
+          <span>2023</span><span>12+</span><span>2h 14min</span><span>Romance</span>
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eveniet nulla maxime similique, alias iusto neque explicabo fugit id, nam nisi ullam asperiores saepe officia quisquam consequuntur dolorem! Dolorem, odit.
+        </p>
+        <div class="button">
+          <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
+          <a href="#"><i class="fa-solid fa-plus"></i>My List</a>
+        </div>
+      </div>
+      <div class="carousel-box">
+        <div class="carousel">
+          <div onclick="changeBg('bg-little-mermaid.jpg','the-little-mermaid')" class="carousel-item">
+              <img src="Images/the-little-mermaid.jpeg" alt="" />
+          </div>
+          <div onclick="changeBg('bg-65.jpeg','the-65')" class="carousel-item">
+              <img src="Images/65.jpg" alt="" />
+          </div>
+          <div onclick="changeBg('bg-the-covenant.jpeg','the-covenant')" class="carousel-item">
+              <img src="Images/bg-the-covenant.jpeg" alt="" />
+          </div>
+          <div onclick="changeBg('bg-the-black-demon (1).jpeg','the-black-demon')" class="carousel-item">
+              <img src="Images/bg-the-black-demon (1).jpeg" alt="" />
+          </div>
+          <div onclick="changeBg('bg-the-tank.jpeg','the-tank')" class="carousel-item">
+              <img src="Images/bg-the-tank.jpeg" alt="" />
+          </div>
+      </div>
+      
+      
+        
+      </div>
+    <div class="ft">
+      <a href="#" class="play">
+        <i class="fa-regular fa-circle-play"></i> Watch Trailer
+      </a>
+      <ul class="sci">
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    
+   
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+    
+  </body>
+</html>
